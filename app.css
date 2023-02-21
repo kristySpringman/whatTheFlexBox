@@ -1,0 +1,94 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+
+}
+
+
+.box1 {
+    background: orange;
+}
+
+.box2 {
+    background: pink;
+}
+
+.box3 {
+    background: seagreen;
+}
+
+.box4 {
+    background: saddlebrown;
+}
+
+.box5 {
+    background: palevioletred;
+}
+
+.box6 {
+    background: turquoise;
+}
+
+.box7 {
+    background: wheat;
+}
+
+.box8 {
+    background: olive;
+}
+
+.box9 {
+    background: chartreuse;
+}
+
+/*  */
+.box10 {
+    background: sandybrown;
+}
+
+
+.container {
+    /* makes container stretch across vw and hold all content inside*/
+    display: flex;
+    border: 10px solid blueviolet;
+    /* inline makes it so that it tightly wraps around the content inside the container */
+    /* display:inline-flex */
+    height: 100vh;
+    /* default is row -> left to right */
+    /* row-reverse -> right to left */
+    /* cross axis - top to bottom -> column */
+    flex-direction: column;
+    /* wrapping -> if things don't fit, make each item wrap to the next line */
+    /* Need in flex parent */
+    flex-wrap: wrap;
+
+}
+
+.box {
+    /* if there isn't enough space on screen, will distribute space evenly upon all children */
+    width: calc (33.33333% - 20px);
+    margin: 10px;
+    /* flex -> distribute space evenly between all elements */
+    flex: 1;
+    /* order is useful when creating responsive designs */
+    /* problem is that if you try to copy and paste, it's going to get reordered based off of order */
+    order: 1;
+}
+
+.box3 {
+    /*  */
+    order: 3;
+}
+
+.box7 {
+    order: -1;
+}

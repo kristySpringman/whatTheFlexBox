@@ -1,0 +1,67 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+
+}
+
+
+.box1 {
+    background: orange;
+}
+
+.box2 {
+    background: pink;
+}
+
+.box3 {
+    background: seagreen;
+}
+
+.box4 {
+    background: saddlebrown;
+}
+
+.box5 {
+    background: palevioletred;
+}
+
+.box6 {
+    background: turquoise;
+}
+
+.box7 {
+    background: wheat;
+}
+
+.box8 {
+    background: olive;
+}
+
+.box9 {
+    background: chartreuse;
+}
+
+/*  */
+.box10 {
+    background: sandybrown;
+}
+
+
+.container {
+    display: flex;
+    border: 10px solid blueviolet;
+    /* how is this differnt from flex direction? */
+    /* can do center, space-between, space-around(space on left and right too)*/
+    justify-content: space-between;
+}
+
+.box {}
