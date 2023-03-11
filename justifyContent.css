@@ -6,7 +6,7 @@
 
 .box {
     color: white;
-    font-size: 100px;
+    font-size: 20px;
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -61,7 +61,21 @@
     border: 10px solid blueviolet;
     /* how is this differnt from flex direction? */
     /* can do center, space-between, space-around(space on left and right too)*/
-    justify-content: space-between;
+    justify-content: end;
+    /* if you make flex-direction to column, it will switch teh main access to be a cross access */
+    flex-direction: column;
+    /* need our min height to be set so our justify-content knows where's the start and end */
+    min-height: 100vh;
+
+
+    /* How to vertically center with flex box */
+    /* display: flex; 
+    justify-content:center;
+    flex-direction:column;
+    min-height:100vh;
+    */
+    /* always ask where is the main access and where is the cross access */
+
 }
 
 .box {}
